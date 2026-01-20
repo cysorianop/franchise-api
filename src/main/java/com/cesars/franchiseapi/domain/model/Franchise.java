@@ -1,0 +1,28 @@
+package com.cesars.franchiseapi.domain.model;
+
+import java.util.List;
+
+public class Franchise {
+
+    private Long id;
+    private String name;
+    private List<Branch> branches;
+
+    public Franchise(Long id, String name, List<Branch> branches) {
+        this.id = id;
+        this.name = name;
+        this.branches = branches;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Branch> getBranches() {
+        return branches;
+    }
+}
